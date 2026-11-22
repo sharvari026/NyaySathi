@@ -1,0 +1,57 @@
+{
+  "case_id": "DEMO-001",
+  "case_type": "cheque_bounce",
+  "draft_type": "legal_notice",
+  "client_name": "Ramesh Patil",
+  "client_address": "123, Gandhi Nagar, Pune - 411001, Maharashtra",
+  "opp_name": "Suresh Sharma",
+  "opp_address": "456, Nehru Road, Nashik - 422001, Maharashtra",
+  "key_facts": "The client issued cheque no. 123456 for Rs. 50,000 dated 15/03/2024 towards repayment of loan. The cheque was presented on 17/03/2024 and returned unpaid with memo 'Insufficient Funds' dated 18/03/2024.",
+  "demand": "Payment of Rs. 50,000 along with interest and costs",
+  "time_limit_days": 15,
+  "language": "en",
+  "documents": [
+    {
+      "doc_type": "cheque",
+      "fields": {
+        "person_names": ["Ramesh Patil"],
+        "dates": ["2024-03-15"],
+        "amounts": ["50000"],
+        "identifiers": {"cheque_no": "123456", "account_no_last4": "7890"},
+        "bank_or_office": "State Bank of India",
+        "signature_visible": false,
+        "stamp_or_seal_visible": true,
+        "image_quality": "good",
+        "notes": "Signature field appears blank - please re-check original",
+        "is_demo": true
+      }
+    },
+    {
+      "doc_type": "bank_return_memo",
+      "fields": {
+        "person_names": ["Ramesh Patel"],
+        "dates": ["2024-03-18"],
+        "amounts": ["50000"],
+        "identifiers": {},
+        "bank_or_office": "State Bank of India",
+        "signature_visible": true,
+        "stamp_or_seal_visible": true,
+        "image_quality": "good",
+        "notes": "Name on memo differs from cheque: Ramesh Patel vs Ramesh Patil",
+        "is_demo": true
+      }
+    }
+  ],
+  "checklist": [
+    {"id": "name_mismatch", "status": "red", "message": "Name mismatch: 'Ramesh Patil' on cheque vs 'Ramesh Patel' on bank return memo. Please verify which spelling is correct.", "doc_ref": "cheque, bank_return_memo"},
+    {"id": "missing_signature", "status": "red", "message": "Cheque: Signature not visible. Original cheque must be signed by the drawer. Please re-check the document.", "doc_ref": "cheque"},
+    {"id": "dates_ok", "status": "green", "message": "All required dates are present and readable.", "doc_ref": "all"},
+    {"id": "amounts_ok", "status": "green", "message": "Cheque amount (Rs. 50,000) matches the demand amount.", "doc_ref": "cheque"}
+  ],
+  "draft_text": "LEGAL NOTICE\n\nDate: [DATE]\n\nTo,\nMr. Suresh Sharma\n456, Nehru Road, Nashik - 422001, Maharashtra\n\nSub: Legal Notice under Section 138 of the Negotiable Instruments Act, 1881 for dishonour of cheque no. 123456 for Rs. 50,000/-\n\nDear Sir,\n\nWe are instructed by and on behalf of our client Mr. Ramesh Patil, resident of 123, Gandhi Nagar, Pune - 411001, Maharashtra, to serve upon you this Legal Notice under Section 138 of the Negotiable Instruments Act, 1881, as under:\n\n1. That our client extended a friendly loan of Rs. 50,000/- (Rupees Fifty Thousand Only) to you, which you promised to repay.\n\n2. That towards repayment of the said amount, you issued Cheque No. 123456 dated 15/03/2024 for Rs. 50,000/- drawn on State Bank of India.\n\n3. That when the said cheque was presented for encashment on 17/03/2024, the same was returned unpaid by the bank vide memo dated 18/03/2024 with the reason 'Insufficient Funds'.\n\n4. That the dishonour of the said cheque constitutes an offence under Section 138 of the Negotiable Instruments Act, 1881.\n\nYou are hereby called upon to pay the aforesaid amount of Rs. 50,000/- (Rupees Fifty Thousand Only) together with interest and costs of this notice within 15 (Fifteen) days from the date of receipt of this notice.\n\nFailing which, our client shall be constrained to initiate appropriate legal proceedings against you, both civil and criminal, at your risk and cost, without any further notice.\n\nYours faithfully,\n\n[Advocate Name]\n[Bar Council No.]\n[Address]\n\n⚠ AI-GENERATED DRAFT – ADVOCATE REVIEW IS REQUIRED BEFORE USE",
+  "suggested_sections": [
+    {"section": "Section 138", "act": "Negotiable Instruments Act, 1881", "explanation": "Makes dishonour of a cheque a criminal offence punishable with up to 2 years imprisonment or fine."},
+    {"section": "Section 142", "act": "Negotiable Instruments Act, 1881", "explanation": "Sets the cognizance procedure – complaint must be filed within 30 days of cause of action."}
+  ],
+  "client_summary": "आपका चेक बाउंस हो गया है। आपको 15 दिनों के अंदर 50,000 रुपये का भुगतान करना होगा। यदि आप भुगतान नहीं करते, तो आपके खिलाफ कानूनी कार्रवाई की जाएगी।"
+}

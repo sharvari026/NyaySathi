@@ -1,0 +1,26 @@
+{
+  "cheque_bounce": [
+    {"section": "Section 138", "act": "Negotiable Instruments Act, 1881", "explanation": "Makes dishonour of a cheque a criminal offence punishable with up to 2 years imprisonment or fine."},
+    {"section": "Section 142", "act": "Negotiable Instruments Act, 1881", "explanation": "Sets the cognizance procedure – complaint must be filed within 30 days of cause of action."},
+    {"section": "Section 80", "act": "Code of Civil Procedure, 1908", "explanation": "Requires serving legal notice before filing civil suit against government bodies."}
+  ],
+  "property_dispute": [
+    {"section": "Section 5", "act": "Transfer of Property Act, 1882", "explanation": "Defines transfer of property between living persons."},
+    {"section": "Section 54", "act": "Transfer of Property Act, 1882", "explanation": "Defines sale and sale deed requirements for immovable property."},
+    {"section": "Section 6", "act": "Specific Relief Act, 1963", "explanation": "Allows courts to compel parties to perform specific acts under a contract."}
+  ],
+  "money_recovery": [
+    {"section": "Order XXXVII", "act": "Code of Civil Procedure, 1908", "explanation": "Summary suit procedure for quick recovery of liquidated money debts."},
+    {"section": "Section 19", "act": "Indian Contract Act, 1872", "explanation": "Deals with voidable contracts."}
+  ],
+  "consumer_complaint": [
+    {"section": "Section 2(7)", "act": "Consumer Protection Act, 2019", "explanation": "Defines 'consumer' who buys goods or avails services for personal use."},
+    {"section": "Section 35", "act": "Consumer Protection Act, 2019", "explanation": "Procedure for filing complaint before District Consumer Commission."},
+    {"section": "Section 69", "act": "Consumer Protection Act, 2019", "explanation": "Limitation period of 2 years from date of cause of action."}
+  ],
+  "family_matter": [
+    {"section": "Section 13", "act": "Hindu Marriage Act, 1955", "explanation": "Grounds for divorce for Hindus."},
+    {"section": "Section 125", "act": "Code of Criminal Procedure, 1973", "explanation": "Maintenance of wife, children and parents."}
+  ],
+  "other": []
+}

@@ -1,0 +1,121 @@
+{
+  "case_id": "DEMO-002",
+  "case_type": "property_dispute",
+  "draft_type": "legal_reply",
+  "client_name": "Vijay Kulkarni",
+  "client_address": "78, Shivaji Peth, Kolhapur - 416001, Maharashtra",
+  "opp_name": "Pradeep Desai",
+  "opp_address": "12, Laxmi Road, Sangli - 416416, Maharashtra",
+  "key_facts": "The client Vijay Kulkarni is the rightful owner of agricultural land Survey No. 45/2, admeasuring 1 acre 20 guntha, situated at Village Shiroli, Taluka Karvir, District Kolhapur. The opponent Pradeep Desai has filed a civil suit claiming ownership based on an alleged sale deed dated [DATE NOT LEGIBLE]. The client disputes the validity of the said sale deed as it does not bear a legible execution date and the 7/12 extract (land record) produced by the opponent is blurry and unreadable.",
+  "demand": "Dismissal of opponent's suit and declaration of client's lawful ownership of Survey No. 45/2",
+  "time_limit_days": 15,
+  "language": "mr",
+  "documents": [
+    {
+      "doc_type": "sale_deed",
+      "fields": {
+        "person_names": ["Vijay Kulkarni", "Pradeep Desai"],
+        "dates": [],
+        "amounts": ["350000"],
+        "identifiers": {"survey_no": "45/2", "registration_no": "Not clear"},
+        "bank_or_office": "Sub-Registrar Office, Karvir",
+        "signature_visible": true,
+        "stamp_or_seal_visible": true,
+        "image_quality": "fair",
+        "notes": "Execution date on the sale deed is not legible – the date field appears to have been left blank or is overwritten. Registration date is partially visible.",
+        "is_demo": true
+      }
+    },
+    {
+      "doc_type": "712_extract",
+      "fields": {
+        "person_names": [],
+        "dates": ["Not clear"],
+        "amounts": [],
+        "identifiers": {"survey_no": "Not clear", "plot_no": "Not clear"},
+        "bank_or_office": "Talathi Office, Shiroli",
+        "signature_visible": false,
+        "stamp_or_seal_visible": false,
+        "image_quality": "poor",
+        "notes": "Image is blurry throughout. Survey number, owner name, and area are unreadable. Document cannot be relied upon in its current form.",
+        "is_demo": true
+      }
+    },
+    {
+      "doc_type": "id_proof",
+      "fields": {
+        "person_names": ["Vijay Kulkarni"],
+        "dates": ["1978-06-12"],
+        "amounts": [],
+        "identifiers": {"aadhaar_last4": "3321"},
+        "bank_or_office": "UIDAI",
+        "signature_visible": false,
+        "stamp_or_seal_visible": false,
+        "image_quality": "good",
+        "notes": "",
+        "is_demo": true
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "missing_date_sale_deed",
+      "status": "yellow",
+      "message": "Sale deed: Execution date is not legible or appears blank. A valid sale deed must have a clear execution date. Please obtain a certified copy from the Sub-Registrar's office.",
+      "doc_ref": "sale_deed"
+    },
+    {
+      "id": "blurry_712_extract",
+      "status": "red",
+      "message": "7/12 Extract: Image is blurry and unreadable. Survey number, owner name and area cannot be verified. Please upload a clearer copy or obtain a fresh certified extract from the Talathi office.",
+      "doc_ref": "712_extract"
+    },
+    {
+      "id": "missing_712_extract_opponent",
+      "status": "yellow",
+      "message": "Opponent's 7/12 extract has not been uploaded. The checker cannot verify opponent's claimed ownership. Please obtain and upload a copy.",
+      "doc_ref": "712_extract"
+    },
+    {
+      "id": "id_proof_ok",
+      "status": "green",
+      "message": "Client identity proof (Aadhaar) is present and readable.",
+      "doc_ref": "id_proof"
+    },
+    {
+      "id": "names_consistent",
+      "status": "green",
+      "message": "Client name 'Vijay Kulkarni' is consistently spelled across sale deed and ID proof.",
+      "doc_ref": "sale_deed, id_proof"
+    }
+  ],
+  "draft_text": "IN THE COURT OF CIVIL JUDGE (SENIOR DIVISION), KOLHAPUR\n\nCivil Suit No. _____ / 2024\n\nPradeep Desai                          ...Plaintiff\nVs.\nVijay Kulkarni                         ...Defendant\n\nWRITTEN STATEMENT / REPLY ON BEHALF OF DEFENDANT\n\nDate: [DATE]\n\nThe Defendant, Vijay Kulkarni, most respectfully submits this Written Statement in reply to the plaint filed by the Plaintiff, Pradeep Desai, and states as under:\n\nPRELIMINARY OBJECTIONS\n\n1. That the present suit is not maintainable in law or on facts.\n\n2. That the sale deed relied upon by the Plaintiff is defective on its face inasmuch as the execution date is not legible/is blank, rendering it invalid as a registered instrument for transfer of immovable property under Section 54 of the Transfer of Property Act, 1882.\n\n3. That the 7/12 extract (land record / Satbara Utara) produced by the Plaintiff is blurry and entirely unreadable. No evidentiary value can be attached to such a document. The Defendant reserves the right to object to its admissibility.\n\nREPLY ON MERITS\n\n4. That the Defendant denies each and every averment in the plaint save those specifically admitted herein.\n\n5. That the Defendant is the lawful and peaceful owner in possession of agricultural land bearing Survey No. 45/2, admeasuring 1 acre 20 guntha, situated at Village Shiroli, Taluka Karvir, District Kolhapur (hereinafter referred to as 'the said property').\n\n6. That the Defendant has been in continuous, uninterrupted, and undisputed possession of the said property for over two decades, and the same is duly recorded in his name in the revenue records.\n\n7. That the alleged sale deed produced by the Plaintiff does not bear a legible execution date and therefore does not satisfy the requirements of a valid sale under Section 54 of the Transfer of Property Act, 1882, read with the Registration Act, 1908.\n\n8. That the Plaintiff has no legal, valid, or subsisting claim or right over the said property, and the present suit has been filed with a mala fide intention to harass the Defendant and dispossess him of his lawful property.\n\n9. That the Defendant has valid and clear title documents and a duly updated 7/12 extract in his name, copies of which are annexed hereto.\n\nPRAYER\n\nIn view of the foregoing, the Defendant most respectfully prays that this Hon'ble Court be pleased to:\n\n(a) Dismiss the Plaintiff's suit with costs;\n(b) Declare the Defendant as the lawful owner of the property bearing Survey No. 45/2, Village Shiroli, Taluka Karvir, District Kolhapur;\n(c) Pass such other and further orders as this Hon'ble Court may deem fit and proper in the interest of justice.\n\nVerification:\nI, Vijay Kulkarni, the Defendant above-named, do hereby verify that the contents of the above Written Statement are true and correct to the best of my knowledge and belief, and no part of it is false and nothing material has been concealed therein.\n\nVerified at Kolhapur on this [DATE].\n\n(Vijay Kulkarni)\nDefendant\n\nThrough:\n[Advocate Name]\n[Bar Council No.]\n[Address]\n\n⚠ AI-GENERATED DRAFT – ADVOCATE REVIEW IS REQUIRED BEFORE USE",
+  "suggested_sections": [
+    {
+      "section": "Section 5",
+      "act": "Transfer of Property Act, 1882",
+      "explanation": "Defines 'transfer of property' as an act by which a living person conveys property to one or more other living persons. Establishes the basic requirement for a valid transfer."
+    },
+    {
+      "section": "Section 54",
+      "act": "Transfer of Property Act, 1882",
+      "explanation": "Defines 'sale' and 'sale deed' requirements for immovable property. A sale of property of value Rs. 100 and upwards can only be made by a registered instrument. A sale deed without a legible/valid execution date may be challenged."
+    },
+    {
+      "section": "Section 17",
+      "act": "Registration Act, 1908",
+      "explanation": "Documents compulsorily registrable — includes instruments of sale of immovable property. A sale deed must be registered to have legal effect."
+    },
+    {
+      "section": "Section 6",
+      "act": "Specific Relief Act, 1963",
+      "explanation": "Provides for declaratory relief — a court may declare a person's title to property where their right is disputed. Defendant may seek a declaration of ownership."
+    },
+    {
+      "section": "Article 65",
+      "act": "Limitation Act, 1963",
+      "explanation": "Sets the limitation period of 12 years for a suit to recover possession of immovable property based on title. Relevant to assess time-barred claims."
+    }
+  ],
+  "client_summary": "श्री विजय कुळकर्णी यांना कळवायचे आहे की, प्रतिवादीने दाखल केलेल्या विक्री-पत्रावर तारीख स्पष्ट नाही, त्यामुळे ते दस्तऐवज कायदेशीरदृष्ट्या अवैध ठरू शकते. तसेच समोरच्या पक्षाने दाखल केलेला ७/१२ उतारा अस्पष्ट असून न्यायालयात तो ग्राह्य धरला जाणार नाही. तुमची जमीन सर्व्हे नंबर ४५/२ तुमच्याच नावावर नोंद आहे. तुमच्या वकिलांनी न्यायालयात तुमची बाजू मांडली आहे. एक स्वच्छ ७/१२ उतारा आणि विक्री-पत्राची प्रमाणित प्रत ताबडतोब मिळवा."
+}

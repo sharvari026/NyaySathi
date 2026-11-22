@@ -1,0 +1,32 @@
+{
+  "cheque_bounce": {
+    "label": "Cheque Bounce (Sec 138 NI Act)",
+    "required_docs": ["cheque", "bank_return_memo", "agreement", "id_proof"],
+    "time_limit_days": 15
+  },
+  "property_dispute": {
+    "label": "Property Dispute",
+    "required_docs": ["712_extract", "sale_deed", "id_proof"],
+    "time_limit_days": 15
+  },
+  "money_recovery": {
+    "label": "Money Recovery",
+    "required_docs": ["agreement", "id_proof"],
+    "time_limit_days": 15
+  },
+  "consumer_complaint": {
+    "label": "Consumer Complaint",
+    "required_docs": ["bill_invoice", "id_proof"],
+    "time_limit_days": 15
+  },
+  "family_matter": {
+    "label": "Family Matter",
+    "required_docs": ["id_proof", "address_proof"],
+    "time_limit_days": 15
+  },
+  "other": {
+    "label": "Other",
+    "required_docs": ["id_proof"],
+    "time_limit_days": 15
+  }
+}
